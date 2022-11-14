@@ -8,13 +8,14 @@ import ProjectType from './components/ProjectOverview/ProjectType/ProjectType'
 import ProjectTags from './components/ProjectOverview/ProjectTags/ProjectTags'
 import ProjectMembers from './components/ProjectOverview/ProjectMembers/ProjectMembers' 
 import { ProjectsProvider } from './ProjectsContext' 
-
+import Logo from "./assets/images/logo.png"
 
 export default function App(){
     
     return (
     <ProjectsProvider>
         <header>
+            <img src={Logo} alt="logo" />
             <h1>ProjecTiles</h1>
             <p>
                 Like a silver bullet piercing through all your management needs
