@@ -79,7 +79,7 @@ export default function TaskDetailsModal(props){
                     </p>
                     <div className="btn-container">
                         <a href="/" className="edit" onClick={setEdit}>edit</a>
-                        <a href="/" className="delete" onClick={_deleteTask}>delete</a>
+                        <a href="/" className="delete" onClick={e=>{_deleteTask(e); props.close(e)}}>delete</a>
                     </div>
                    
                 </div>

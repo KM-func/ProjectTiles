@@ -7,7 +7,7 @@ import deleteIcon from "../../../assets/images/delete-icon.svg"
 
 export default function Component(props){
     const [addTask, setAddTask] = useState(false);
-    const { currentProject, editComponentTask, deleteComponent } = useProjects();
+    const { currentProject, handleDragDropped, deleteComponent } = useProjects();
 
     const changeAddTask = (e) =>{
         e.preventDefault();
@@ -48,7 +48,7 @@ export default function Component(props){
         }
 
         console.log(taskData)
-        editComponentTask(currentProject.projectID, newTaskData, taskStatus, taskData.name); 
+        handleDragDropped(currentProject.projectID, newTaskData, taskStatus, taskData.name); 
     }
 
     const _deleteComponent = (e) =>{

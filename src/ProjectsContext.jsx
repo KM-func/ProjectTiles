@@ -290,6 +290,37 @@ export const ProjectsProvider = ({ children }) => {
             }
         }
     }
+    const handleDragDropped = (projectID, editedTask, oldName) => { 
+        dispatch({
+            type: "DELETE_COMPONENT_TASK",
+            payload: {
+                projectID: projectID,
+                taskID: editedTask.taskID
+            }
+        }) 
+        if(editedTask.status !== oldName){
+            
+            dispatch({
+                type: "ADD_COMPONENT_TASK",
+                payload: {
+                    projectID: projectID,
+                    task: editedTask,
+                    historyUpdate: {
+                        date: currentDate,
+                        entry: `Changed status of task "${editedTask.name}" to "${editedTask.status}" (prev. name ${oldName})`
+                    }
+                }
+            })
+        } else {
+            dispatch({
+                type: "ADD_COMPONENT_TASK",
+                payload: {
+                    projectID: projectID,
+                    task: editedTask, 
+                }
+            })
+        }
+    }
     const deleteTask = (projectID, taskID, taskName, taskStatus) => {
         dispatch({
             type: "DELETE_COMPONENT_TASK",
@@ -324,7 +355,8 @@ export const ProjectsProvider = ({ children }) => {
         editProjType,
         removeTag,
         removeMember,
-        deleteComponent
+        deleteComponent,
+        handleDragDropped
     }
 
     return <ProjectsContext.Provider value={value}>
