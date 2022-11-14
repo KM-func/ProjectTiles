@@ -17,7 +17,7 @@ export default function App(){
         <header>
             <h1>ProjecTiles</h1>
             <p>
-                Like a silver bullet for all your management needs
+                Like a silver bullet piercing through all your management needs
             </p>
         </header>
         <div className="app">
