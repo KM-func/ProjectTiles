@@ -55,8 +55,7 @@ export default function OverviewHeader(props){
                             changeTitle={changeTitle} 
                             title={props.activeProject.projectTitle} 
                             editTitle={editTitle} 
-                            setTitle={setTitle} 
-                            
+                            setTitle={setTitle}
                             />:
                         <ReadOnlyTitle title={props.activeProject.projectTitle} editTitle={editTitle} setTitle={setTitle} />
                     }
