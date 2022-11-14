@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ProjectTiles/static/css/main.02bd1d96.css",
-    "main.js": "/ProjectTiles/static/js/main.29a60a3f.js",
+    "main.js": "/ProjectTiles/static/js/main.cc6facb0.js",
     "static/media/edit-icon.svg": "/ProjectTiles/static/media/edit-icon.91cea0a36ac1343df2e747e6308895fb.svg",
     "index.html": "/ProjectTiles/index.html",
     "static/media/add-icon.svg": "/ProjectTiles/static/media/add-icon.8d0403657085eb1e12ccc3cf0bf989a0.svg",
@@ -9,10 +9,10 @@
     "static/media/delete-icon.svg": "/ProjectTiles/static/media/delete-icon.67d46bf91d6c81670471194d2b0c49c7.svg",
     "static/media/remove-icon.svg": "/ProjectTiles/static/media/remove-icon.c0de4f582ff7900f9f7d970d1dfb7e05.svg",
     "main.02bd1d96.css.map": "/ProjectTiles/static/css/main.02bd1d96.css.map",
-    "main.29a60a3f.js.map": "/ProjectTiles/static/js/main.29a60a3f.js.map"
+    "main.cc6facb0.js.map": "/ProjectTiles/static/js/main.cc6facb0.js.map"
   },
   "entrypoints": [
     "static/css/main.02bd1d96.css",
-    "static/js/main.29a60a3f.js"
+    "static/js/main.cc6facb0.js"
   ]
 }
